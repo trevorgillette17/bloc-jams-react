@@ -50,12 +50,12 @@ class Album extends Component {
 
     handleMouseEnter () {
         this.setState({ isHovered: true });
-console.log ("hello")
+console.log("hello")
 }
 
     handleMouseLeave () 
     {this.setState({ isHovered: false });
-console.log ("good-bye")
+console.log("Bye")
 }
 
 	render() {
@@ -77,8 +77,12 @@ console.log ("good-bye")
 			</colgroup>
 			<tbody>
 			{this.state.album.songs.map( (song, index) =>( 
-                <tr key={index} onClick={() => this.handleSongClick(song)} handleMouseEnter={() => this.onMouseEnter(song)} handleMouseLeave={() => this.onMouseLeave()} >
-				<td>{index+1}</td>
+                <tr key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleMouseEnter(song)} onMouseLeave={() => this.handleMouseLeave()} >
+                    <button>
+                        <span className ="ion-md-play"></span>
+                        <span className = "ion-md-pause"></span>
+                    </button>
+                    <td>{index+1}</td>
 				<td>{song.title}</td>
 				<td>{song.duration}</td>
 				</tr>
