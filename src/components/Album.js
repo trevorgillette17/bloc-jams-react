@@ -69,15 +69,15 @@ getSongIcon (song,index) {
 
 if (song == this.state.isHovered) {
 if (song == this.state.currentSong && this.state.isPlaying) {
-return (<span className = "ion-md-pause"></span>)
+return (<span className = "ion-md-pause"></span>);
 }
-else { return (<span className ="ion-md-play"></span>) }
+else { return (<span className ="ion-md-play"></span>); }
 }
 else { 
 if (song == this.state.currentSong) {
-return (<span className = "ion-md-pause"></span>)
+return (<span className = "ion-md-pause"></span>);
 } else {
-return (song.index)
+return (index+1)
 }
 }
 }
@@ -101,7 +101,7 @@ return (song.index)
 			<tbody>
 			{this.state.album.songs.map( (song, index) =>( 
                 <tr key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleMouseEnter(song)} onMouseLeave={() => this.handleMouseLeave(song)} >
-                <td>{getSongIcon(song,index)}</td>
+                <td>{this.getSongIcon(song,index)}</td>
 				<td>{song.title}</td>
 				<td>{song.duration}</td>
 				</tr>
