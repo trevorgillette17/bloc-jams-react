@@ -11,19 +11,19 @@
                       <button id="play-pause" onClick={this.props.handleSongClick} >
              <span className={this.props.isPlaying ? 'ion-md-pause' : 'ion-md-play'}></span>
            </button>
-           <button id="next">
+           <button id="next" onClick={this.props.handleNextClick}>
              <span className="ion-md-skip-forward"></span>
            </button>
          </section>
          <section id="time-control">
-           <div className="current-time">–:––</div>
+           <div className="ion-md-current-time">–:––</div>
            <input type="range" className="seek-bar" value="0" />
-           <div className="total-time">–:––</div>
+           <div className="ion-md-total-time">–:––</div>
          </section>
          <section id="volume-control">
            <div className="ion-md-volume-low"></div>
            <input type="range" className="seek-bar" value="80" />
-           <div className="icon ion-md-volume-high"></div>
+           <div className="ion-md-volume-high"></div>
          </section>
        </section>
      );
