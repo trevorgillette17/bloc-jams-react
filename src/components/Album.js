@@ -163,7 +163,7 @@ return (sec < 10 ? (`${min}:0${sec}`) : (`${min}:${sec}`))
                 <tr key={index} onClick={() => this.handleSongClick(song)} onMouseEnter={() => this.handleMouseEnter(song)} onMouseLeave={() => this.handleMouseLeave(song)} >
                 <td>{this.getSongIcon(song,index)}</td>
 				<td>{song.title}</td>
-				<td>{song.duration}</td>
+				<td>{this.formatTime(song.duration)}</td>
 				</tr>
 			))}
 			</tbody>
