@@ -5,13 +5,13 @@
      return (
        <section className="player-bar">
                   <section id="buttons">
-                      <button id="previous" onClick={this.props.handlePrevClick}>
+                      <button id="previous" onClick={this.props.handlePrevClick} className="btn-info">
              <span className="ion-md-skip-backward"></span>
            </button>
-                      <button id="play-pause" onClick={this.props.handleSongClick} >
+                      <button id="play-pause" onClick={this.props.handleSongClick} className="btn-primary">
              <span className={this.props.isPlaying ? 'ion-md-pause' : 'ion-md-play'}></span>
            </button>
-           <button id="next" onClick={this.props.handleNextClick}>
+           <button id="next" onClick={this.props.handleNextClick} className="btn-info">
              <span className="ion-md-skip-forward"></span>
            </button>
          </section>

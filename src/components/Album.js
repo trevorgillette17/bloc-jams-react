@@ -89,14 +89,14 @@ getSongIcon (song,index) {
 //  if playing show pause
 //  else show song number
 
-if (song == this.state.isHovered) {
-if (song == this.state.currentSong && this.state.isPlaying) {
+if (song === this.state.isHovered) {
+if (song === this.state.currentSong && this.state.isPlaying) {
 return (<span className = "ion-md-pause"></span>);
 }
 else { return (<span className ="ion-md-play"></span>); }
 }
 else { 
-if (song == this.state.currentSong) {
+if (song === this.state.currentSong) {
 return (<span className = "ion-md-pause"></span>);
 } else {
 return (index+1)

@@ -1,17 +1,34 @@
 {
   "name": "bloc-jams-react",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
   "dependencies": {
+    "ajv": "^6.5.4",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.5"
+    "react-scripts": "^1.1.5",
+    "startbootstrap-scrolling-nav": "^4.1.1",
+    "webpack-cli": "^3.1.2",
+    "bootstrap": "^4.1.3",
+    "webpack": "^4.21.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node your-script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevorgillette17/bloc-jams-react.git"
+  },
+  "author": "Trevor Gillette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevorgillette17/bloc-jams-react/issues"
+  },
+  "homepage": "https://github.com/trevorgillette17/bloc-jams-react#readme"
 }
