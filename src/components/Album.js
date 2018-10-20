@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
 
+
 class Album extends Component {
 	constructor(props) {
 		super(props);
@@ -168,7 +169,8 @@ return (sec < 10 ? (`${min}:0${sec}`) : (`${min}:${sec}`))
 			))}
 			</tbody>
         </table>
-                 <PlayerBar
+        <div className="playerbar">
+                 <PlayerBar className="playerbar"
            isPlaying={this.state.isPlaying}
            currentSong={this.state.currentSong}
            currentTime={this.audioElement.currentTime}
@@ -181,6 +183,7 @@ return (sec < 10 ? (`${min}:0${sec}`) : (`${min}:${sec}`))
            handleVolumeChange={(e) => this.handleVolumeChange(e)}
            formatTime={(time) => this.formatTime(time)}
        />
+   </div>
 			</section>
 		);
     }

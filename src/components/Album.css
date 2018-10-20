@@ -1,0 +1,12 @@
+
+img {
+left: 0px;
+}
+
+.flex-container {
+display: flex;
+}
+
+.playerbar {
+    border: 2px solid black;
+}
