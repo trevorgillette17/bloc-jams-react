@@ -7,6 +7,6 @@ left: 0px;
 display: flex;
 }
 
-.playerbar {
-    border: 2px solid black;
+#song-list {
+border: 2px solid black;
 }
